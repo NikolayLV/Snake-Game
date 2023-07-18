@@ -59,6 +59,10 @@ function drawGame() {
     ctx.font = "50px Arial";
     ctx.fillText(score, box * 2.5, box * 1.7);
 
+    ctx.fillStyle = "black";
+    ctx.font = "25px Arial";
+    ctx.fillText(score, box * 15.5, box * 1.7);
+
     let snakeX = snake[0].x;
     let snakeY = snake[0].y;
 
@@ -90,6 +94,37 @@ function drawGame() {
     eatTail(newHead, snake);
 
     snake.unshift(newHead);
+
+
 }
+
+let bestScoreP = document.querySelector(".bestScore")
+let bestScore = 1;
+
+function restartGame() {
+
+
+    if (bestScore <= score) {
+        bestScore = score;
+    }
+
+    bestScoreP.innerHTML = bestScore;
+    clearInterval(game);
+    snake = [];
+    snake[0] = {
+        x: 9 * box,
+        y: 10 * box,
+    };
+    score = 0;
+    dir = undefined;
+
+
+    game = setInterval(drawGame, 100);
+}
+
+let button = document.querySelector(".button")
+button.addEventListener('click', restartGame);
+
+
 
 let game = setInterval(drawGame, 100);

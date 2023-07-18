@@ -3,3 +3,21 @@ canvas {
     margin: 0 auto;
 
 }
+
+.button {
+    width: 160px;
+    height: 40px;
+    border: 1px solid black;
+    background-color: wheat;
+    color: black;
+}
+
+.div__score {
+    display: flex;
+}
+
+.bestScore {
+    font-family: "Georgia";
+    font-size: 18px;
+    padding-left: 40px;
+}
