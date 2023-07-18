@@ -6,14 +6,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <canvas id="game" width="608px" height="608">
+<section class="main">
+    <div class="canvas">
+        <canvas id="game" width="608px" height="608">
 
-   </canvas>
-   <div class="div__score">
-       <h2>Your best score</h2>
-       <p class="bestScore">0</p>
-   </div>
-   <button class="button"> Начать заново </button>
+        </canvas>
+    </div>
+
+    <div class="temp">
+        <div class="div__score">
+            <h2>Your best score -</h2>
+            <h1 class="bestScore">0</h1>
+        </div>
+        <button class="button"> Начать заново </button>
+    </div>
+</section>
+
+
 <script src="game.js"></script>
 </body>
 </html>
