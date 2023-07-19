@@ -12,6 +12,8 @@ let box = 32;
 let bestScoreP = document.querySelector(".bestScore")
 let bestScore = 0;
 
+let game;
+
 let score = 0;
 
 let food = {
@@ -103,7 +105,9 @@ function drawGame() {
 
 }
 
-
+let lvl1 = document.querySelector("#lvl1");
+let lvl2 = document.querySelector("#lvl2");
+let lvl3 = document.querySelector("#lvl3");
 
 function restartGame() {
 
@@ -116,13 +120,31 @@ function restartGame() {
     score = 0;
     dir = undefined;
 
+    if (lvl1.checked) {
+        game = setInterval(drawGame, 150);
+    }
+    else if (lvl2.checked) {
+        game = setInterval(drawGame, 100);
+    }
+    else if (lvl3.checked) {
+        game = setInterval(drawGame, 50);
+    }
+    else {
+        alert("Выберите уровень сложности!")
+    }
 
-    game = setInterval(drawGame, 100);
+
 }
 
 let button = document.querySelector(".learn-more")
 button.addEventListener('click', restartGame);
 
+// let form = document.querySelector(".form")
+// form.addEventListener("submit", function(event) {
+//
+// })
 
 
-let game = setInterval(drawGame, 100);
+
+
+
