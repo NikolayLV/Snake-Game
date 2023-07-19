@@ -9,6 +9,9 @@ foodImg.src = "img/food.png";
 
 let box = 32;
 
+let bestScoreP = document.querySelector(".bestScore")
+let bestScore = 0;
+
 let score = 0;
 
 let food = {
@@ -55,13 +58,15 @@ function drawGame() {
         ctx.fillRect(snake[i].x, snake[i].y, box, box);
     }
 
+    if (bestScore <= score) {
+        bestScore = score;
+    }
+
+    bestScoreP.innerHTML = bestScore;
+
     ctx.fillStyle = "white";
     ctx.font = "50px Arial";
     ctx.fillText(score, box * 2.5, box * 1.7);
-
-    ctx.fillStyle = "black";
-    ctx.font = "25px Arial";
-    ctx.fillText(score, box * 15.5, box * 1.7);
 
     let snakeX = snake[0].x;
     let snakeY = snake[0].y;
@@ -98,17 +103,10 @@ function drawGame() {
 
 }
 
-let bestScoreP = document.querySelector(".bestScore")
-let bestScore = 1;
+
 
 function restartGame() {
 
-
-    if (bestScore <= score) {
-        bestScore = score;
-    }
-
-    bestScoreP.innerHTML = bestScore;
     clearInterval(game);
     snake = [];
     snake[0] = {
@@ -122,7 +120,7 @@ function restartGame() {
     game = setInterval(drawGame, 100);
 }
 
-let button = document.querySelector(".button")
+let button = document.querySelector(".learn-more")
 button.addEventListener('click', restartGame);
 
 
