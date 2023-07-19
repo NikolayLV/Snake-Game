@@ -9,7 +9,6 @@
 <section class="main">
     <div class="canvas">
         <canvas id="game" width="608px" height="608">
-
         </canvas>
     </div>
 
@@ -18,23 +17,11 @@
             <h2 class="bScore">Your best score -</h2>
             <h1 class="bestScore">0</h1>
         </div>
-        <button class="learn-more"> Начать игру </button>
-        <div class="div__radio">
+        <button class="learn-more"> Начать игру</button>
+
+
             <form action="" class="form">
                 <h3 class="choose__dif">Choose game difficulty</h3>
-<!--                <div>-->
-<!--                    <input type="radio" id="lvl1"-->
-<!--                           name="contact" value="lvl1">-->
-<!--                    <label for="lvl1">Easy</label>-->
-
-<!--                    <input type="radio" id="lvl2"-->
-<!--                           name="contact" value="lvl2">-->
-<!--                    <label for="lvl2">Normal</label>-->
-
-<!--                    <input type="radio" id="lvl3"-->
-<!--                           name="contact" value="lvl3">-->
-<!--                    <label for="lvl3">Hard</label>-->
-<!--                </div>-->
                 <div class="radio-buttons-container">
                     <div class="radio-button">
                         <input name="radio-group" id="lvl1" class="radio-button__input" type="radio">
@@ -62,13 +49,44 @@
                     </div>
                 </div>
             </form>
-            <select class="change__lang">
-                <option value="ru">RU</option>
-                <option value="en" selected>EN</option>
-                <option value="ua">UA</option>
-            </select>
+
+            <div class="languageChoose">
+                <select class="change__lang">
+                    <option value="ru">RU</option>
+                    <option value="en" selected>EN</option>
+                    <option value="ua">UA</option>
+                </select>
+            </div>
+
+
+            <div class="KeyBoardChoose">
+                <h2 class="layout">Choose your keyboard layout</h2>
+                <form action="" class="form">
+                    <div class="radio-buttons-container">
+                        <div class="radio-button">
+                            <input name="radio-group" id="kb1" class="radio-button__input" type="radio">
+                            <label for="kb1" class="radio-button__label">
+                                <span class="radio-button__custom"></span>
+
+                                Up - Right - Down - Left
+                            </label>
+                        </div>
+                        <div class="radio-button">
+                            <input name="radio-group" id="kb2" class="radio-button__input" type="radio">
+                            <label for="kb2" class="radio-button__label">
+                                <span class="radio-button__custom"></span>
+                                W - A - S - D
+
+                            </label>
+                        </div>
+                    </div>
+                </form>
+
+
+            </div>
+
         </div>
-    </div>
+
 </section>
 
 <script src="lang.js"></script>
