@@ -145,25 +145,41 @@ button.addEventListener('click', restartGame);
 // })
 
 let select = document.querySelector("select");
-select.addEventListener("change", changeURLLang);
+select.addEventListener("change", changeLang);
 const allLang = ["en", "ru", "ua"];
 
 function changeURLLang() {
-    let lang = select.value;
-    location.href = window.location.pathname + "#" + lang;
-    location.reload();
+    console.log(select.value);
 }
 
 function changeLang() {
-    let hash = window.location.hash;
-    hash = hash.substring(1);
-    console.log(hash);
-    if (!allLang.includes(hash)) {
-        location.href = window.location.pathname + "#en";
-        location.reload();
+    let hash = select.value;
+    if (hash == "ru") {
+        document.querySelector(".bScore").innerHTML = langArr['score'][hash];
+        document.querySelector(".learn-more").innerHTML = langArr['start'][hash];
+        document.querySelector(".choose__dif").innerHTML = langArr['difficulty'][hash];
     }
-    select.value = hash;
-    document.querySelector(".bScore").innerHTML = langArr['score'][hash];
+    else if (hash == "en") {
+        document.querySelector(".bScore").innerHTML = langArr['score'][hash];
+        document.querySelector(".learn-more").innerHTML = langArr['start'][hash];
+        document.querySelector(".choose__dif").innerHTML = langArr['difficulty'][hash];
+    }
+    else if (hash == "ua") {
+        document.querySelector(".bScore").innerHTML = langArr['score'][hash];
+        document.querySelector(".learn-more").innerHTML = langArr['start'][hash];
+        document.querySelector(".choose__dif").innerHTML = langArr['difficulty'][hash];
+    }
+    else {
+        document.querySelector(".bScore").innerHTML = langArr['score']['en'];
+    }
+    // hash = hash.substring(1);
+    // console.log(hash);
+    // if (!allLang.includes(hash)) {
+    //     location.href = window.location.pathname + "#en";
+    //     location.reload();
+    // }
+    // select.value = hash;
+    // document.querySelector(".bScore").innerHTML = langArr['score'][hash];
 }
 
 changeLang();

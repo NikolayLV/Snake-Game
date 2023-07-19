@@ -4,14 +4,14 @@ const langArr = {
         "en": "Your best score -",
         "ua": "Твой лучший результат -",
     },
-    'score' : {
-        "ru": "Твой лучший результат -",
-        "en": "Your best score -",
+    'start' : {
+        "ru": "Начать игру",
+        "en": "Start the game",
         "ua": "Твой лучший результат -",
     },
-    'score' : {
-        "ru": "Твой лучший результат -",
-        "en": "Your best score -",
+    'difficulty' : {
+        "ru": "Выбери сложность игры",
+        "en": "Choose game difficulty",
         "ua": "Твой лучший результат -",
     },
     'score' : {
