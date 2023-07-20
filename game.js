@@ -215,16 +215,28 @@ function changeLang() {
         document.querySelector(".learn-more").innerHTML = langArr['start'][hash];
         document.querySelector(".choose__dif").innerHTML = langArr['difficulty'][hash];
         document.querySelector(".layout").innerHTML = langArr['layout'][hash];
+        document.querySelector(".colorH").innerHTML = langArr['colorH'][hash];
+        document.querySelector(".colorB").innerHTML = langArr['colorBody'][hash];
+        document.querySelector("#colorBtn1").innerHTML = langArr['colorBtn'][hash];
+        document.querySelector("#colorBtn2").innerHTML = langArr['colorBtn'][hash];
     } else if (hash == "en") {
         document.querySelector(".bScore").innerHTML = langArr['score'][hash];
         document.querySelector(".learn-more").innerHTML = langArr['start'][hash];
         document.querySelector(".choose__dif").innerHTML = langArr['difficulty'][hash];
         document.querySelector(".layout").innerHTML = langArr['layout'][hash];
+        document.querySelector(".colorH").innerHTML = langArr['colorH'][hash];
+        document.querySelector(".colorB").innerHTML = langArr['colorBody'][hash];
+        document.querySelector("#colorBtn1").innerHTML = langArr['colorBtn'][hash];
+        document.querySelector("#colorBtn2").innerHTML = langArr['colorBtn'][hash];
     } else if (hash == "ua") {
         document.querySelector(".bScore").innerHTML = langArr['score'][hash];
         document.querySelector(".learn-more").innerHTML = langArr['start'][hash];
         document.querySelector(".choose__dif").innerHTML = langArr['difficulty'][hash];
         document.querySelector(".layout").innerHTML = langArr['layout'][hash];
+        document.querySelector(".colorH").innerHTML = langArr['colorH'][hash];
+        document.querySelector(".colorB").innerHTML = langArr['colorBody'][hash];
+        document.querySelector("#colorBtn1").innerHTML = langArr['colorBtn'][hash];
+        document.querySelector("#colorBtn2").innerHTML = langArr['colorBtn'][hash];
     }
 }
 

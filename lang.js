@@ -29,4 +29,19 @@ const langArr = {
         "en": "Choose your difficulty level!",
         "ua": "Виберіть рівень складності!",
     },
+    'colorH' : {
+        "ru": "Выберите цвет головы:",
+        "en": "Choose head color:",
+        "ua": "Виберіть колір голови:",
+    },
+    'colorBody' : {
+        "ru": "Выберите цвет тела:",
+        "en": "Choose body color:",
+        "ua": "Виберіть колір тіла:",
+    },
+    'colorBtn' : {
+        "ru": "Применить",
+        "en": "Apply",
+        "ua": "Застосувати",
+    },
 }
