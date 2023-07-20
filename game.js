@@ -69,6 +69,20 @@ function direction(event) {
 
 }
 
+let chosenColorHead = "#0DC0B8FF";
+let chosenColorBody = "#d36f6f";
+
+function applyColor() {
+    const colorHead = document.getElementById('colorHead');
+    const colorBody = document.getElementById('colorBody');
+
+
+    chosenColorHead = colorHead.value;
+    chosenColorBody = colorBody.value;
+    console.log(chosenColorHead)
+
+}
+
 function directionSecond(event) {
     if (event.keyCode == 65 && dir != "right")
         dir = "left";
@@ -80,6 +94,8 @@ function directionSecond(event) {
         dir = "down";
 
 }
+
+
 
 function eatTail(head, arr) {
     for (let i = 0; i < arr.length; i++) {
@@ -94,7 +110,7 @@ function drawGame() {
     ctx.drawImage(foodImg, food.x, food.y);
 
     for (let i = 0; i < snake.length; i++) {
-        ctx.fillStyle = i == 0 ? "black" : "#B18597FF";
+        ctx.fillStyle = i == 0 ? chosenColorHead : chosenColorBody;
         ctx.fillRect(snake[i].x, snake[i].y, box, box);
     }
 
@@ -211,6 +227,8 @@ function changeLang() {
         document.querySelector(".layout").innerHTML = langArr['layout'][hash];
     }
 }
+
+
 
 changeLang();
 
