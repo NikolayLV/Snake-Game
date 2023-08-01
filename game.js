@@ -102,7 +102,14 @@ function directionSecond(event) {
 
 }
 
-
+if (food1.checked) {
+    foodImg.src = "img/food.png";
+    console.log("food1")
+}
+else if (food2.checked) {
+    foodImg.src = "img/apple.png";
+    console.log("food2")
+}
 
 function eatTail(head, arr) {
     for (let i = 0; i < arr.length; i++) {
@@ -113,14 +120,7 @@ function eatTail(head, arr) {
 
 function drawGame() {
 
-    if (food1.checked == true) {
-        foodImg.src = "img/food.png";
-        console.log(food1.checked)
-    }
-    else if (food2.checked == true) {
-        foodImg.src = "img/apple.png";
-        console.log(food2.checked)
-    }
+
 
     ctx.drawImage(ground, 0, 0);
 
