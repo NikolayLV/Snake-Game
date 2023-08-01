@@ -7,14 +7,8 @@ ground.src = "img/ground.png";
 let food1 = document.querySelector("#food1")
 let food2 = document.querySelector("#food1")
 
-if (food1.checked == true) {
-    foodImg.src = "img/food.png";
-    console.log(food1.checked)
-}
-else if (food2.checked == true) {
-    foodImg.src = "img/apple.png";
-    console.log(food2.checked)
-}
+
+
 
 
 
@@ -118,6 +112,16 @@ function eatTail(head, arr) {
 }
 
 function drawGame() {
+
+    if (food1.checked == true) {
+        foodImg.src = "img/food.png";
+        console.log(food1.checked)
+    }
+    else if (food2.checked == true) {
+        foodImg.src = "img/apple.png";
+        console.log(food2.checked)
+    }
+
     ctx.drawImage(ground, 0, 0);
 
     ctx.drawImage(foodImg, food.x, food.y);
@@ -209,8 +213,10 @@ function restartGame() {
 }
 
 let button = document.querySelector(".learn-more")
+
 button.addEventListener('click', restartGame);
 button.addEventListener('click', chooseKeyBoard);
+button.addEventListener('click', drawGame);
 
 
 select.addEventListener("change", changeLang);
