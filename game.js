@@ -1,16 +1,30 @@
 const canvas = document.getElementById("game");
 const ctx = canvas.getContext("2d");
-
+const foodImg = new Image();
 const ground = new Image();
 ground.src = "img/ground.png";
 
-const foodImg = new Image();
-foodImg.src = "img/food.png";
+let food1 = document.querySelector("#food1")
+let food2 = document.querySelector("#food1")
+
+if (food1.checked) {
+    foodImg.src = "img/food.png";
+}
+else if (food2.checked) {
+    foodImg.src = "img/apple.png";
+}
+else {
+    foodImg.src = "img/food.png";
+}
+
+
 
 let box = 32;
 
 let bestScoreP = document.querySelector(".bestScore")
 let select = document.querySelector("select");
+
+
 let bestScore = 0;
 
 let game;
