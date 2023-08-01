@@ -18,8 +18,11 @@ canvas {
     padding-top: 150px;
 }
 
+.colorB {
+    padding-top: 50px;
+}
 .colorChoose {
-    padding-top: 200px;
+    padding-top: 150px;
 }
 
 button {
