@@ -7,14 +7,13 @@ ground.src = "img/ground.png";
 let food1 = document.querySelector("#food1")
 let food2 = document.querySelector("#food1")
 
-if (food1.checked) {
+if (food1.checked == true) {
     foodImg.src = "img/food.png";
+    console.log(food1.checked)
 }
-else if (food2.checked) {
+else if (food2.checked == true) {
     foodImg.src = "img/apple.png";
-}
-else {
-    foodImg.src = "img/food.png";
+    console.log(food2.checked)
 }
 
 
