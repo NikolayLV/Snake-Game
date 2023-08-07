@@ -1,15 +1,11 @@
 const canvas = document.getElementById("game");
 const ctx = canvas.getContext("2d");
-const foodImg = new Image();
+let foodImg = new Image();
 const ground = new Image();
 ground.src = "img/ground.png";
 
 let food1 = document.querySelector("#food1")
 let food2 = document.querySelector("#food1")
-
-
-
-
 
 
 let box = 32;
