@@ -225,6 +225,13 @@ button.colorBtn:active::before {
     box-shadow: 0 0 10px #4c8bf580;
 }
 
+.wait {
+    text-align: center;
+    margin-top: 300px;
+    color: #cc5e97;
+    font-size: 54px;
+}
+
 
 
 
