@@ -62,7 +62,7 @@ button.learn-more::before {
     bottom: 0;
     background: #f9c4d2;
     border-radius: inherit;
-    -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+    -webkit-box-shadow: 0 0 0 2px #cd8fad, 0 0.625em 0 0 #ffe3e2;
     box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
     -webkit-transform: translate3d(0, 0.75em, -1em);
     transform: translate3d(0, 0.75em, -1em);
@@ -224,6 +224,7 @@ button.colorBtn:active::before {
     border-color: #4c8bf5;
     box-shadow: 0 0 10px #4c8bf580;
 }
+
 
 
 
