@@ -76,7 +76,7 @@ button.learn-more:hover {
 }
 
 button.learn-more:hover::before {
-    -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+    -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #f1d7d6;
     box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
     -webkit-transform: translate3d(0, 0.5em, -1em);
     transform: translate3d(0, 0.5em, -1em);
